@@ -1,92 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#101712" />
-  <meta name="description" content="Choub Khunrithy — Mobile Developer portfolio. Flutter, GetX, FastAPI and MongoDB." />
-  <title>Choub Khunrithy — Mobile Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choub Khunrithy — Mobile Developer</title>
+<meta name="description" content="Choub Khunrithy — Mobile Developer in Phnom Penh. Flutter, GetX, FastAPI and MongoDB.">
+<meta name="theme-color" content="#0f1511">
+<meta property="og:title" content="Choub Khunrithy — Mobile Developer">
+<meta property="og:description" content="Flutter, GetX, FastAPI and MongoDB. Based in Phnom Penh, Cambodia.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f1511'/%3E%3Ctext x='16' y='22' font-size='16' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%239be8a6'%3EKC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&family=Noto+Sans+Khmer:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="grain" aria-hidden="true"></div>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="Khunrithy home"><span class="brand-mark">K.</span><span>CHOUB<span class="brand-muted"> / PORTFOLIO</span></span></a>
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
-    <nav class="nav-links" aria-label="Main navigation">
-      <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Journey</a><a href="#projects">Projects</a><a href="#contact" class="nav-contact">Let's talk <span>↗</span></a>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Choub Khunrithy, home"><span class="mark">KC</span>Khunrithy</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><span></span><span></span></button>
+    <nav id="nav-links" class="links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#journey">Journey</a>
+      <a href="#projects">Projects</a>
+      <a class="btn btn-sm" href="#contact">Contact</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <main>
-    <section class="hero section-wrap" id="home">
-      <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="status-dot"></span> MOBILE DEVELOPER <span class="eyebrow-line"></span> PHNOM PENH, CAMBODIA</div>
-        <h1>Building digital<br>experiences with<br><span class="accent-text">purpose<span class="period">.</span></span></h1>
-        <p class="hero-lead">Hi, I'm <strong>Choub Khunrithy</strong> — a Mobile Developer focused on creating thoughtful, reliable applications and learning something new with every challenge.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span>↘</span></a><a class="text-link" href="assets/Choub-Khunrithy-CV.pdf" download>Download CV <span>↓</span></a></div>
-        <div class="hero-meta"><span>01 / INTRODUCTION</span><span>SCROLL TO EXPLORE <span class="scroll-arrow">↓</span></span></div>
+<main id="main">
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="status"><span class="dot"></span>Open to internships and collaboration</p>
+      <h1>I build mobile apps that feel simple to use.</h1>
+      <p class="lead">I'm <strong>Choub Khunrithy</strong>, a Computer Science student in Phnom Penh. I build Flutter apps with FastAPI backends, and I learn something new from every bug.</p>
+      <div class="actions">
+        <a class="btn" href="#projects">View projects</a>
+        <a class="btn btn-ghost" href="assets/Choub-Khunrithy-CV.pdf" download>Download CV</a>
       </div>
-      <div class="hero-art reveal" aria-label="Abstract developer-themed graphic">
-        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
-        <div class="art-core"><span class="core-bracket">{ }</span><span class="core-caption">THINK<br>BUILD<br>IMPROVE</span></div>
-        <div class="float-card card-code"><span class="mini-dot"></span> flutter.dev <span class="card-arrow">↗</span></div>
-        <div class="float-card card-stack"><span class="stack-symbol">⌘</span><span>Clean code<br><small>Better products</small></span></div>
-        <div class="art-index">KH<span> / </span>01</div>
+      <ul class="stack" aria-label="Main technologies">
+        <li>Flutter</li><li>Dart</li><li>GetX</li><li>FastAPI</li><li>MongoDB</li>
+      </ul>
+    </div>
+    <div class="phone" aria-hidden="true">
+      <div class="screen">
+        <div class="bar"></div>
+        <div class="card-a"><span></span><span></span></div>
+        <div class="row"><i></i><b></b></div>
+        <div class="row"><i></i><b></b></div>
+        <div class="row"><i></i><b></b></div>
+        <div class="tabs"><i class="on"></i><i></i><i></i></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="ticker" aria-label="Technology interests"><div class="ticker-track"><span>FLUTTER</span><i>✳</i><span>DART</span><i>✳</i><span>GETX</span><i>✳</i><span>FASTAPI</span><i>✳</i><span>MONGODB</span><i>✳</i><span>PROBLEM SOLVING</span><i>✳</i><span>FLUTTER</span><i>✳</i><span>DART</span><i>✳</i><span>GETX</span><i>✳</i><span>FASTAPI</span><i>✳</i><span>MONGODB</span><i>✳</i></div></section>
-
-    <section class="about section-wrap section-space" id="about">
-      <div class="section-kicker reveal"><span>01</span> / A LITTLE ABOUT ME</div>
-      <div class="about-grid">
-        <h2 class="section-heading reveal">Curious by nature.<br><span class="muted-heading">Developer by choice.</span></h2>
-        <div class="about-copy reveal"><p class="large-copy">I’m a Computer Science student at the Royal University of Phnom Penh with a growing passion for mobile application development.</p><p>I enjoy challenging myself, solving problems with creative ideas and critical thinking, and helping others with their schoolwork and projects. I believe every challenge is an opportunity to learn and improve.</p><div class="quote-mark">“</div><blockquote>The more errors and challenges I face, the more I am able to learn.</blockquote><div class="about-facts"><div><span>BASED IN</span><strong>Phnom Penh, KH</strong></div><div><span>EDUCATION</span><strong>B.Sc. Computer Science</strong></div><div><span>FOCUS</span><strong>Mobile Development</strong></div></div></div>
+  <section id="about" class="sec wrap">
+    <h2>About</h2>
+    <div class="about">
+      <div>
+        <p>I'm a Computer Science student at the Royal University of Phnom Penh with a growing passion for mobile application development.</p>
+        <p>I enjoy solving problems with creative ideas and critical thinking, and helping other students with their schoolwork and projects.</p>
+        <blockquote>The more errors and challenges I face, the more I am able to learn.</blockquote>
       </div>
-    </section>
+      <dl class="facts">
+        <div><dt>Location</dt><dd>Phnom Penh, Cambodia</dd></div>
+        <div><dt>Education</dt><dd>B.Sc. Computer Science, RUPP</dd></div>
+        <div><dt>Focus</dt><dd>Mobile development</dd></div>
+        <div><dt>Languages</dt><dd>Khmer, English</dd></div>
+      </dl>
+    </div>
+  </section>
 
-    <section class="skills section-wrap section-space" id="skills">
-      <div class="section-kicker reveal"><span>02</span> / TOOLKIT</div>
-      <div class="section-topline"><h2 class="section-heading reveal">Tools I work <span class="muted-heading">with.</span></h2><p class="section-note reveal">A growing toolkit for building useful, maintainable software.</p></div>
-      <div class="skills-grid">
-        <article class="skill-card reveal"><span class="skill-number">01</span><div class="skill-icon">⌁</div><h3>Mobile development</h3><p>Building mobile interfaces and application experiences.</p><div class="tags"><span>Flutter</span><span>GetX</span><span>Dart</span><span>Flutter DIO</span></div></article>
-        <article class="skill-card reveal"><span class="skill-number">02</span><div class="skill-icon">{ }</div><h3>Programming</h3><p>Core programming concepts and object-oriented thinking.</p><div class="tags"><span>C</span><span>C++</span><span>Python</span><span>Java</span><span>C#</span></div></article>
-        <article class="skill-card reveal"><span class="skill-number">03</span><div class="skill-icon">⌘</div><h3>Backend & data</h3><p>Working with APIs, data storage and backend foundations.</p><div class="tags"><span>FastAPI</span><span>MongoDB</span><span>SQL</span></div></article>
-        <article class="skill-card reveal"><span class="skill-number">04</span><div class="skill-icon">◫</div><h3>Web & design</h3><p>Interface fundamentals and visual design tools.</p><div class="tags"><span>HTML</span><span>CSS</span><span>Figma</span></div></article>
-      </div>
-    </section>
+  <section id="skills" class="sec wrap">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <div><dt>Mobile</dt><dd><span>Flutter</span><span>Dart</span><span>GetX</span><span>Dio</span></dd></div>
+      <div><dt>Backend and data</dt><dd><span>FastAPI</span><span>MongoDB</span><span>SQL</span></dd></div>
+      <div><dt>Languages</dt><dd><span>C</span><span>C++</span><span>Python</span><span>Java</span><span>C#</span></dd></div>
+      <div><dt>Web and design</dt><dd><span>HTML</span><span>CSS</span><span>Figma</span></dd></div>
+    </dl>
+  </section>
 
-    <section class="experience section-wrap section-space" id="experience">
-      <div class="section-kicker reveal"><span>03</span> / THE JOURNEY</div>
-      <h2 class="section-heading reveal">Learning, teaching<br><span class="muted-heading">and growing.</span></h2>
-      <div class="timeline">
-        <article class="timeline-item reveal"><div class="timeline-date">2025 — 2026</div><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-type">TEACHING EXPERIENCE</div><h3>C/C++ Teacher</h3><h4>Teach in Class · Royal University of Phnom Penh</h4><p>Supported students in understanding C/C++ program structure, organizing code into header and source files, and learning memory-management fundamentals including pointers and dynamic allocation.</p><div class="tags"><span>C/C++</span><span>Teaching</span><span>Problem solving</span></div></div></article>
-        <article class="timeline-item reveal"><div class="timeline-date">2023 — PRESENT</div><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-type">EDUCATION</div><h3>Bachelor of Computer Science</h3><h4>Royal University of Phnom Penh (RUPP)</h4><p>Currently a Year 4, Semester 1 student, developing a foundation in computer science and software engineering.</p></div></article>
-        <article class="timeline-item reveal"><div class="timeline-date">2025 — PRESENT</div><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-type">PROFESSIONAL TRAINING</div><h3>Mobile App Development — Flutter</h3><h4>ANT Training Technology Center</h4><p>Studying mobile application development through a scholarship from MPTC CBRD.</p><div class="tags"><span>Flutter</span><span>Mobile development</span></div></div></article>
-        <article class="timeline-item reveal"><div class="timeline-date">2017 — 2023</div><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-type">FOUNDATION</div><h3>High School Graduate · Bac II</h3><h4>Moung Ruessei High School</h4><p>Completed high school education.</p></div></article>
-      </div>
-    </section>
+  <section id="journey" class="sec wrap">
+    <h2>Journey</h2>
+    <ol class="timeline">
+      <li>
+        <time>2025 – 2026</time>
+        <h3>C/C++ Teacher</h3>
+        <p class="org">Royal University of Phnom Penh</p>
+        <p>Helped students understand program structure, header and source files, pointers and dynamic memory allocation.</p>
+      </li>
+      <li>
+        <time>2025 – Present</time>
+        <h3>Mobile App Development, Flutter</h3>
+        <p class="org">ANT Training Technology Center</p>
+        <p>Studying mobile development on a scholarship from MPTC CBRD.</p>
+      </li>
+      <li>
+        <time>2023 – Present</time>
+        <h3>Bachelor of Computer Science</h3>
+        <p class="org">Royal University of Phnom Penh (RUPP)</p>
+        <p>Year 4, Semester 1. Building a foundation in computer science and software engineering.</p>
+      </li>
+      <li>
+        <time>2017 – 2023</time>
+        <h3>High School, Bac II</h3>
+        <p class="org">Moung Ruessei High School</p>
+      </li>
+    </ol>
+  </section>
 
-    <section class="projects section-wrap section-space" id="projects">
-      <div class="section-kicker reveal"><span>04</span> / SELECTED WORK</div>
-      <div class="section-topline"><h2 class="section-heading reveal">Ideas into <span class="muted-heading">interfaces.</span></h2><p class="section-note reveal">A space for selected academic and personal projects.</p></div>
-      <div class="project-grid">
-        <article class="project-card project-feature reveal"><div class="project-visual visual-scholar"><div class="visual-window"><div class="window-bar"><i></i><i></i><i></i><span>scholarship.app</span></div><div class="mock-layout"><div class="mock-side"></div><div class="mock-main"><div class="mock-label"></div><div class="mock-title"></div><div class="mock-title short"></div><div class="mock-row"><b></b><b></b><b></b></div><div class="mock-button"></div></div></div></div><span class="visual-caption">01 — MOBILE UI CONCEPT</span></div><div class="project-info"><div><span class="project-category">FLUTTER · UI/UX</span><h3>Scholarship Application</h3><p>A scholarship-focused mobile app concept with user and admin experiences.</p></div><span class="project-arrow">↗</span></div></article>
-        <article class="project-card reveal"><div class="project-visual visual-finance"><div class="finance-card"><span>MONTHLY OVERVIEW</span><strong>Allocation<br>funds<span>.</span></strong><div class="finance-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>TRACK · PLAN · REVIEW</small></div><span class="visual-caption">02 — APP CONCEPT</span></div><div class="project-info"><div><span class="project-category">FLUTTER · GETX</span><h3>Finance Tracker</h3><p>A personal finance interface concept for organizing budget allocations.</p></div><span class="project-arrow">↗</span></div></article>
-        <article class="project-card reveal"><div class="project-visual visual-api"><div class="terminal"><div class="terminal-top"><i></i><i></i><i></i><span>terminal</span></div><p><b>➜</b> uvicorn main:app --reload</p><p class="terminal-green">INFO: Application startup complete.</p><p><b>GET</b> /api/todos <em>200 OK</em></p><p><b>POST</b> /api/auth/login <em>200 OK</em></p><div class="terminal-cursor"></div></div><span class="visual-caption">03 — BACKEND DEVELOPMENT</span></div><div class="project-info"><div><span class="project-category">FASTAPI · MONGODB</span><h3>Todo API</h3><p>A backend learning project exploring REST APIs and data persistence.</p></div><span class="project-arrow">↗</span></div></article>
-      </div>
-      <p class="project-disclaimer">Project descriptions are introductory summaries. Add verified repository links, screenshots and completion status before publishing.</p>
-    </section>
+  <section id="projects" class="sec wrap">
+    <h2>Projects</h2>
+    <div class="projects">
+      <article class="proj">
+        <p class="tag">Flutter · FastAPI</p>
+        <h3>Pingo AI</h3>
+        <p>A language learning app with a Flutter client and a FastAPI backend.</p>
+        <a href="https://github.com/ChoubKhunrithy/pingo-ai-api" target="_blank" rel="noopener">View on GitHub<span class="sr"> (opens in a new tab)</span></a>
+      </article>
+      <article class="proj">
+        <p class="tag">Final year project</p>
+        <h3>Cambodia Tourism Guide</h3>
+        <p>A travel planner app for exploring places in Cambodia, with an admin dashboard.</p>
+      </article>
+      <article class="proj">
+        <p class="tag">FastAPI · MongoDB</p>
+        <h3>Todo API</h3>
+        <p>A REST API project covering authentication, CRUD endpoints and data storage.</p>
+        <a href="https://github.com/ChoubKhunrithy/todo_api_running" target="_blank" rel="noopener">View on GitHub<span class="sr"> (opens in a new tab)</span></a>
+      </article>
+      <article class="proj">
+        <p class="tag">Flutter · UI concept</p>
+        <h3>Scholarship App</h3>
+        <p>A scholarship mobile app concept with separate user and admin experiences.</p>
+      </article>
+    </div>
+  </section>
 
-    <section class="contact section-wrap section-space" id="contact">
-      <div class="contact-panel reveal"><div class="section-kicker"><span>05</span> / GET IN TOUCH</div><div class="contact-content"><div><h2>Have a good<br>idea? <span class="accent-text">Let's build.</span></h2><p>I'm always open to learning, collaborating and discussing meaningful projects.</p></div><a class="contact-email" href="mailto:choubkhunrithy@gmail.com">choubkhunrithy<br>@gmail.com <span>↗</span></a></div><div class="contact-bottom"><a href="tel:+855312287763">+855 31 228 7763</a><span>PHNOM PENH, CAMBODIA</span><a href="mailto:choubkhunrithy@gmail.com">SEND AN EMAIL ↗</a></div></div>
-    </section>
-  </main>
-  <footer class="footer section-wrap"><a class="brand" href="#home"><span class="brand-mark">K.</span><span>CHOUB KHUNRITHY</span></a><span>DESIGNED & BUILT WITH PURPOSE</span><span>© <span id="year"></span> KHUNRITHY</span><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
+  <section id="contact" class="sec wrap contact">
+    <h2>Let's build something together</h2>
+    <p>I'm open to internships, collaboration and conversations about mobile development.</p>
+    <a class="mail" href="mailto:choubkhunrithy@gmail.com">choubkhunrithy@gmail.com</a>
+    <ul class="reach">
+      <li><a href="tel:+855312287763">+855 31 228 7763</a></li>
+      <li><a href="https://github.com/ChoubKhunrithy" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="foot wrap">
+  <span>© <span id="year">2026</span> Choub Khunrithy</span>
+  <a href="#top">Back to top</a>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
